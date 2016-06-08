@@ -1,0 +1,29 @@
+use the command
+
+  objdump -t bomb > st.d
+
+to get the symbol table. 
+
+  objdump -d bomb > bomb.d
+
+to get all the assemble code of bomb
+
+  strings bomb > strings.d
+
+to get all the printable strings in bomb
+
+  gdb bomb
+  break explode_bomb
+
+to debug bomb and set breakpoint to prevent bomb from exploding
+
+  x/wx 0x80497c0
+  x/8x $esp+12
+  x/s 0x80497c0
+  x/24i 0x80497c0
+
+to show the const string in the memory
+
+  i r eax
+
+to show the register
